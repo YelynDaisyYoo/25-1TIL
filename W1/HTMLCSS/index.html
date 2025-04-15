@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--글자크기-->
+    <h1></h1>
+    <h2></h2>
+    <h3></h3>
+
+    <!--링크태그-->
+    <a href="https://www.naver.com/">네이버</a>
+    
+    <!--이미지-->
+    <img src="C:\2025-1\멋사\TIL\img\dog-8510901_1280.jpg" alt="">
+
+    <!--줄바꿈-->
+    <br/>
+    
+    <!--테이블-->
+    <table>
+        <tr> <!--열-->
+            <th>열의 첫번째 행</th><!--행 항목-->
+            <th>이름</th>
+            <th>수강과목</th>
+        </tr>
+        <tr>
+            <td>열의 내용</td><!--행 내용-->
+            <td>홍길동</td>
+            <td>수학</td>
+        </tr>
+        <tr>
+            <td rowspan="2">2.</td> <!--테이블의 행병합-->
+            <td colspan="2">김길동</td><!--테이블의 열병합-->
+            <td>영어</td>
+        </tr>
+        <tr>
+            <td>박길동</td>
+            <td>국어</td>
+        </tr>
+    </table>
+
+    <!--목록-->
+    <!--목록을 서로 포함시킬 수 있음-->
+    <ul>
+        <li>목록1</li>
+        <li>목록2</li>
+    </ul>
+
+    <ol>
+        <li>목록요소</li>
+        <li>목록요소</li>
+    </ol>
+
+    <!--p태그-->
+    <p>문단의 시작을 알려주는 태그. 개행이 두번 이루어짐</p>
+
+    <!--div태그 span태그-->
+    <div>div명<span style="background-color: blue">span 영역</span>span 영역 외외</div>
+
+    <!--form 태그-->
+    <form action="C:\2025-1\멋사\TIL\W1\HTMLCSS\index2.html" method="POST">
+        <input type="text" name="" id="assd">
+        <input type="password" name="" id="">
+        <input type="radio" name="radio" id="">
+        <input type="checkbox">
+        <input type="hidden" name="" value="id"> <!--사용자에게 보이지 않게 값 전송--> 
+        <textarea name="" id="" cols="30" rows="10"></textarea><!--장문의 입력을 받을 때-->
+        <select name="select1" id="">
+            <option value="apple">사과</option><!--value에 적은 값이 서버에 전송됨-->
+            <option value="pear">배</option>
+            <option value="mango">망고</option>
+        </select>
+        <input type="submit" value="제출">
+    </form>
+
+    <!--iframe 태그 다른 페이지 내용을 가져오는 경우 사용-->
+    <iframe src="https://www.youtube.com/watch?v=iIl586rP9_s" frameborder="0" style="width:600px height:600px;"></iframe>
+
+</body>
+</html>

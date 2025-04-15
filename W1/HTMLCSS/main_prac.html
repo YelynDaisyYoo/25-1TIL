@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-eqiv="X-UA-Compatible" content="ie=edge">
+    <!--외부 style sheet-->
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+
+    <!--내부 sytle sheet-->
+    <style>
+        body
+        {
+            margin:0px;
+        }
+
+        div
+        {
+            color:orange;
+        }
+
+        div2
+        {
+            color:red;
+        }
+
+        div1
+        {
+            color:blue;
+        }
+
+    /*웹페이지를 모바일에 맞추기 위한 media 쿼리*/
+       /* 1280px이하만 css적 요소를 반영할 것임*/ 
+       @media all and (max-width: 1280px)
+        {
+            .header .nav .menu2
+            {
+                display none;
+            }
+
+            .header .nav .menu3
+            {
+                display none;
+            }
+
+            .header .nav .menu4            
+            {
+                display none;
+            }
+
+            .header .nav .menu5
+            {
+                display none;
+            }
+        }
+       /* 1280px이상만 css적 요소를 반영할 것임*/ 
+       @media all and (min-width: 1280px)
+
+    /*변형*/
+       .main .section1 .img1:hover
+        {
+            transform: scale(2);
+            transition-delay: 1s;
+            transition-durationn: 3s;
+        }
+       
+    </style>
+</head>
+<body>
+    <!--inline style-->
+    <!--띄어쓰기를 통해 두개의 스타일시트를 적은 경우, 위의 코드상에 가장 마지막으로나오는 스타일시트가 적용됨(div1)-->
+    <div class="div1 div2" id="iddiv1">div 영역</div>
+    <div>div 영역</div>
+    
+</body>
+</html>
